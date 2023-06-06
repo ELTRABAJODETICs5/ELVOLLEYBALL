@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #4E5869;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color:#414958;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+}
+
+/* ~~ este contenedor rodea a todas las demás divs, lo que les asigna su anchura basada en porcentaje ~~ */
+.container {
+	width: 80%;
+	max-width: 1260px;/* puede que sea conveniente una anchura máxima (max-width) para evitar que este diseño sea demasiado ancho en un monitor grande. Esto mantiene una longitud de línea más legible. IE6 no respeta esta declaración. */
+	min-width: 780px;/* puede que sea conveniente una anchura mínima (min-width) para evitar que este diseño sea demasiado estrecho. Esto permite que la longitud de línea sea más legible en las columnas laterales. IE6 no respeta esta declaración. */
+	background-color: #FFF;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño. No es necesario si establece la anchura de .container en el 100%. */
+}
+
+/* ~~no se asigna una anchura al encabezado. Se extenderá por toda la anchura del diseño. Contiene un marcador de posición de imagen que debe sustituirse por su propio logotipo vinculado~~ */
+.header {
+	background-color: #6F7D94;
+}
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+.content {
+	padding: 10px 0;
+}
+
+/* ~~ Este selector agrupado da espacio a las listas del área de .content ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* este relleno reproduce en espejo el relleno derecho de la regla de encabezados y de párrafo incluida más arriba. El relleno se ha colocado en la parte inferior para que el espacio existente entre otros elementos de la lista y a la izquierda cree la sangría. Estos pueden ajustarse como se desee. */
+}
+
+/* ~~ El pie de página ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #6F7D94;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si #footer se elimina o se saca fuera de #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="IMAGENES/logo" alt="Insertar logotipo aquí" name="Insert_logo" width="24%" height="120" id="Insert_logo" style="background-color: #8090AB; display:block;" /><strong><center><h2>EL VOLLEYBALL</h2></center></strong></a> 
+    <!-- end .header --></div>
+  <div class="content">
+    <h1>REGLAS</h1>
+    <p>Entre las reglas básicas del voleibol se destacan:</p>
+    <ul>
+      <li><strong>La puntuación. </strong>Se disputa el mejor puntaje de cinco tandas de juego, también denominados &ldquo;sets&rdquo;. El equipo que acumula tres sets ganados será el campeón, para lo cual debe alcanzar en cada set veinticinco puntos y con una ventaja de dos puntos respecto al adversario (por ejemplo, veinticinco contra veintitrés puntos). En caso de que los equipos alcancen una puntuación de veinticinco contra veinticuatro, deben jugar hasta lograr una diferencia de dos puntos. Por eso, la duración de los partidos de voleibol varía tanto.</li>
+      <li><strong>El</strong> <strong>saque.</strong> Es la acción que da comienzo a cada partida, se realiza con el jugador ubicado detrás de la línea de fondo y el resto del equipo situado en los límites del campo. Si un jugador saca y el adversario no logra atajar el balón, el jugador anota un punto a favor de su equipo. En caso de que el saque resulte fallido (toca la red y cae en su propio campo o se va fuera del área), el turno de saque pasa al adversario.</li>
+      <li><strong>Área de juego.</strong> Está delimitada por un rectángulo de dieciocho metros de largo, por nueve metros de ancho, y se divide en el centro por una red que separa las dos áreas de juego. La designación de los campos para cada equipo se sortea antes del partido y en cada nuevo set se intercambian las áreas.</li>
+      <li><strong>Zona de ataque.</strong> La línea central que se ubica debajo de la red divide al campo de juego en dos zonas iguales, de nueve metros por nueve metros cada una. A tres metros de distancia de la línea central, otra línea delimita la zona de ataque para cada área, donde se encuentran limitadas las acciones de los jugadores.</li>
+      <li><strong>La red.</strong> Se ubica en el centro del campo de juego a una altura de 2,43 cm para la categoría masculina y a 2,24 cm para la categoría femenina. Si el balón toca la red, no se considera una falta y, al rebotar, puede continuar con la jugada.</li>
+      <li><strong>Los jugadores</strong> no pueden meterse en el campo del equipo adversario ni tocar la red. El partido está formado por tres, cuatro o cinco sets. Un equipo gana un set cuando alcanza o supera los 25 punto con una ventaja de dos. Cuando gane tres sets y en cada set gane al otro equipo por dos puntos habrá ganado el partido.</li>
+    </ul>
+    
+    <center><img src="IMAGENES/REGLAS IMG" width="410" height="408" /></center>
+<ul>
+      <li>Se juega en una cancha de 18x9 metros, dividida por una red de 2.43 metros de alto para los hombres y 2.24 metros para las mujeres.</li>
+      <li>Cada selección tiene permitido en los Juegos Olímpicos contar con doce jugadores, pero solo seis juegan en la cancha.</li>
+      <li>El partido se pone en marcha cuando se realiza el saque, que manda la bola a la mitad contraria de la pista.</li>
+      <li>Los equipos tienen permitido tocar el balón tres veces antes de que este deba cruzar la red hacia la parte de la pista rival. Vale aclarar que un bloqueo no se considera un toque.</li>
+      <li>Ningún jugador puede tocar la pelota dos veces seguidas.</li>
+      <li>Los jugadores pueden pasar la pelota al campo rival con cualquier parte del cuerpo.</li>
+      <li>Cada vez que una selección gana un saque al rival, sus jugadores rotan una posición en sentido de las agujas del reloj.</li>
+      <li>Cada equipo cuenta con dos tiempos muertos de 30 segundos cada uno por set.</li>
+      <li>Cada equipo puede hacer seis cambios en cada set, cuando el juego está parado, por la zona de ataque y cumpliendo la siguiente norma: en un mismo set, si el jugador A es cambiado por el jugador B y posteriormente quiere volver al campo solo podrá hacerlo sustituyendo a este jugador B.</li>
+      <li>El líbero, que viste diferente al resto de los jugadores, es el único que puede entrar y salir cuantas veces quiera.</li>
+    </ul>
+    <center>
+    <br /></center>
+    <br />
+<h3>&nbsp;</h3>
+    <!-- end .content --></div>
+  <div class="footer">
+    <p>REGLAS OFICIALES DE VOLLEYBALL SEGUN LA <strong>FIVB</strong></p>
+    <p>DERECHOS RESERVADOS A <strong>SAMUEL ALVAREZ</strong></p>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>
