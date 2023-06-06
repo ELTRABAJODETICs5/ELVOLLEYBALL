@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #4E5869;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color:#414958;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+}
+
+/* ~~ este contenedor rodea a todas las demás divs, lo que les asigna su anchura basada en porcentaje ~~ */
+.container {
+	width: 80%;
+	max-width: 1260px;/* puede que sea conveniente una anchura máxima (max-width) para evitar que este diseño sea demasiado ancho en un monitor grande. Esto mantiene una longitud de línea más legible. IE6 no respeta esta declaración. */
+	min-width: 780px;/* puede que sea conveniente una anchura mínima (min-width) para evitar que este diseño sea demasiado estrecho. Esto permite que la longitud de línea sea más legible en las columnas laterales. IE6 no respeta esta declaración. */
+	background-color: #FFF;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño. No es necesario si establece la anchura de .container en el 100%. */
+}
+
+/* ~~no se asigna una anchura al encabezado. Se extenderá por toda la anchura del diseño. Contiene un marcador de posición de imagen que debe sustituirse por su propio logotipo vinculado~~ */
+.header {
+	background-color: #6F7D94;
+}
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+.content {
+	padding: 10px 0;
+}
+
+/* ~~ Este selector agrupado da espacio a las listas del área de .content ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* este relleno reproduce en espejo el relleno derecho de la regla de encabezados y de párrafo incluida más arriba. El relleno se ha colocado en la parte inferior para que el espacio existente entre otros elementos de la lista y a la izquierda cree la sangría. Estos pueden ajustarse como se desee. */
+}
+
+/* ~~ El pie de página ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #6F7D94;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si #footer se elimina o se saca fuera de #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="container">
+  <div class="header"><a href="#"><img src="IMAGENES/logo" alt="Insertar logotipo aquí" name="Insert_logo" width="24%" height="120" id="Insert_logo" style="background-color: #8090AB; display:block;" /><center>
+    <strong><h2>EL VOLLEYBALL</h2></strong>
+  </center></a> 
+  <!-- end .header --></div>
+  <div class="content">
+    <h1>HISTORIA</h1>
+    <p>El nombre <a href="https://concepto.de/voleibol/"><em>voleibol</em></a> en español (y sus variantes vóleibol, volibol, balonvolea o vóley), deriva del inglés &ldquo;volleyball<strong>&rdquo;</strong> y hace referencia a una <a href="https://concepto.de/disciplina-2/">disciplina</a> de más de cien años de <a href="https://concepto.de/existencia/">existencia</a> que <strong>fue creada en 1895 por William G. Morgan</strong>, director de <a href="https://concepto.de/educacion-fisica-2/">educación física</a> en la asociación Young Men&rsquo;s Christian Association (YMCA) de Estados Unidos.<br />
+    </p>
+    <p>Originalmente se llamaba &ldquo;mintonette&rdquo; pero, durante una demostración, notaron que el voleo del balón sobre la red describía la esencia del <a href="https://concepto.de/juego/">juego</a> y por eso lo comenzaron a llamar &ldquo;volley ball&rdquo;. En 1952, la Asociación Norteamericana de Voleibol unificó las palabras para denominarlo de manera oficial &ldquo;volleyball&rdquo;.</p>
+    <p>El voleibol <strong>es un <a href="https://concepto.de/deporte/">deporte</a> que se juega en una cancha dividida a la mitad por una red, donde se enfrentan dos equipos</strong> de seis jugadores cada uno. El <a href="https://concepto.de/objetivo/">objetivo</a> del juego consiste en pasar el balón por encima de la red para que toque el suelo del campo contrario, sin que el contrincante logre alcanzarlo.</p>
+    <p>Se juega golpeando o impulsando el balón y cada equipo tiene un máximo de tres toques para pasarlo al campo contrario. Los jugadores de un mismo equipo rotan su posición a medida que van ganando puntos.<br />
+    <center>
+      <img src="IMAGENES/balon" width="300" height="297" /> <br /></center>
+  </p>
+    <h2>CREADOR</h2>
+    <p><strong>En 1870 nació William G. Morgan en Lockport, Nueva York</strong>. Durante su infancia, asistió a la escuela pública y trabajaba en el astillero de su padre, a orillas del viejo Canal de Erie. Asistiendo a la Mount Hermon Preparatory School en Massachusetts conoció a James A. Naismith, en ese entonces profesor de <a href="https://concepto.de/educacion-fisica-2/">educación física</a> de la YMCA y <a href="https://concepto.de/historia-del-basquetbol/">creador del baloncesto</a>.</p>
+    <p>Naismith quedó impresionado con las <a href="https://concepto.de/habilidad-2/">habilidades</a> atléticas de Morgan y lo alentó para que continúe su <a href="https://concepto.de/educacion-4/">educación</a> en la Escuela Internacional de Capacitación de la Asociación Cristiana de Hombres Jóvenes (actualmente llamada Springfield College). <strong>En 1894 Morgan se graduó, y comenzaría aquí el camino que culminaría en la invención del voleibol</strong>.</p>
+    <p>&nbsp;</p>
+    <h2 id="origen-del-voleibol">Origen del voleibol</h2>
+    <p>En el <strong>1895 William G. Morgan asumió como director de educación física en la YMCA</strong> y se encontró con un <a href="https://concepto.de/problema/">problema</a>, debía proporcionar el ejercicio sin que fuera demasiado agresivo o intenso. Notaba que el juego de baloncesto, a pesar de ser muy popular, resultaba demasiado agotador.</p>
+    <p>Quería una alternativa en la que no fuese necesario dar tantos golpes o sacudidas, de modo que se adaptara a un público más amplio. <strong>Morgan tomó ideas de diversos deportes</strong>, como la pelota del <a href="https://concepto.de/baloncesto/">baloncesto</a>, la red del tenis, el uso de las manos del balonmano y el concepto de entradas del béisbol. Así, creó una disciplina que denominó &ldquo;mintonette&rdquo;.</p>
+    <p>Un año después, el juego mintonette resultó muy popular y obtuvo una audiencia en la Conferencia de Directores Físicos de la asociación YMCA, celebrada en Massachusetts. Allí, el Dr. Alfred Halstead, profesor del Springfield College, observó que lo más destacado del juego era el voleo del balón sobre la red. Por eso, sugirió rebautizarlo &ldquo;volley ball&rdquo;.</p>
+    <p>En los orígenes, el &ldquo;mintonette&rdquo; resultaba bastante diferente al desempeño del voleibol que se conoce en la actualidad. <strong>Se jugaba en una cancha más pequeña, con un balón muy pesado, una red más baja</strong> y demasiados jugadores que golpeaba el balón una cantidad ilimitada de veces.</p>
+    <p>Aunque Morgan probablemente no lo imaginó en aquel momento, décadas más tarde el voleibol <strong>se convirtió en la segunda disciplina de equipo más popular del mundo</strong>, después del <a href="https://concepto.de/futbol/">futbol</a>.</p>
+    <br />
+   <center> <img src="file:///C|/Windows/SysWOW64/morgan_william.jpg" width="420" height="328" /><br /></center>
+    <p>&nbsp;</p>
+    <br />
+    <br />
+    <!-- end .content --></div>
+  <div class="footer">
+    <p>DERECHOS RESERVADOS A<strong> SAMUEL ALVAREZ</strong></p>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>
